@@ -5,7 +5,7 @@ body{ background-color: #1E1E1E;
     color: white;
     background-image: url(grain/texture.png);
     background-size: 20%;
-    background-blend-mode: lighten;
+    background-blend-mode: lighten; 
     
 }
 
@@ -66,12 +66,30 @@ position: relative;
         font-family: Anton, sans-serif;
         text-align: center;
         position: absolute;
-        top: 5%;
-        left: 3%;
+        top: -1%;
+        left: 1%;
         width: 100%;
         text-align: center;
-        transform: translateY(px); 
+        transform: translateY(5px); 
 }
+
+
+.sections::before {
+    content: 'COMPÉTENCES';
+    color: transparent;
+    z-index: -1;
+    -webkit-text-stroke: 1px #00ff04;
+    font-size: 76px;
+    font-family: Anton, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: -1%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(5px); 
+}
+
 
 
 
@@ -109,7 +127,8 @@ font-family: Anton;
 font-size: 76px;
 text-align: center;
 position: absolute;
-transform: translate(-2%, -5%);
+transform: translate(-50%, 285%);
+z-index: 2;
 
 }
 
@@ -129,18 +148,88 @@ transform: translate(-2%, -5%);
 border: solid #343434 80px;
     width: 100%;
     margin-top: 20%;
+    z-index: 1;
 
 }
 
 
 #etoile{
 position: absolute;
-margin-left: 389px;
-margin-top: 12%;
+left: 27%;
+top: 650px;
+z-index: 3;
 }
 
 #sphere{
 
     position: absolute;
-    margin-left: 70%;
+   left: 71%;
+   top: 68%;
+   z-index: -1;
+}
+
+.carre{
+
+    width  : 183px;
+    height : 183px;
+    margin: 15px;
+    background : #000000;
+    border-radius: 20%;
+    -webkit-box-shadow: 5px 5px 0px 2px #00FF04; 
+box-shadow: 5px 5px 0px 2px #00FF04;
+}
+
+.competence{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.competence-container{
+display: flex;
+padding-left: 7%;
+padding-top: 77px;
+gap: 110px;
+
+
+}
+
+.competence-containerbis{
+
+    display: flex;
+    padding-left: 17%;
+    padding-top: 77px;
+    gap: 110px;
+
+}
+
+.icones{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+.icones-haut{
+    display: flex;
+    padding-left: 7%;
+    padding-top: 77px;
+    gap: 110px;
+
+             
+}
+
+
+
+.icones-bas{
+
+    display: flex;
+    padding-left: 17%;
+    padding-top: 77px;
+    gap: 110px;
+             
 }
