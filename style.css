@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{ background-color: #1E1E1E;
+    color: white;
+    background-image: url(grain/texture.png);
+    background-size: 20%;
+    background-blend-mode: lighten;
+    
+}
+
+#menu{
+    font-family: Montserrat;
+     font-size: 16px;
+
+}
+
+#ligne {
+   
+    border: solid white 1px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+
+
+a{ 
+
+text-decoration: none;
+color: inherit;
+
+}
+
+#button1{
+
+width: 82px;
+height: 38px;
+font-family: Montserrat;
+border-radius: 4px;
+border: none;
+-webkit-box-shadow: 3px 3px 0px 1px #00FF06; 
+box-shadow: 3px 3px 0px 1px #00FF06;
+
+
+}
+
+.titre{
+
+font-family: Anton;
+font-size: 90px;
+text-align: center;
+}
+
+.texte1{
+
+    font-family: montserrat, semibold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.texte2{
+
+    font-family: montserrat, medium;
+    font-size: 26px;   
+    text-align: center;
+}
+
+.text-stroke {
+    color: transparent;
+	-webkit-text-stroke: 1px #00ff04;
+	font-size: 90px;
+	font-family: Anton, sans-serif;
+    text-align: center;
+}
