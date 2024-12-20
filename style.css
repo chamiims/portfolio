@@ -12,7 +12,20 @@ body{ background-color: #1E1E1E;
 #menu{
     font-family: Montserrat;
      font-size: 16px;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     column-gap: 20px;
 
+}
+
+.Introduction{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(140px);
 }
 
 #ligne {
@@ -74,7 +87,7 @@ position: relative;
 }
 
 
-.sections::before {
+#Compétences::before {
     content: 'COMPÉTENCES';
     color: transparent;
     z-index: -1;
@@ -89,6 +102,39 @@ position: relative;
     text-align: center;
     transform: translateY(5px); 
 }
+
+#Projets::before {
+    content: 'PROJETS';
+    color: transparent;
+    z-index: -1;
+    -webkit-text-stroke: 1px #00ff04;
+    font-size: 76px;
+    font-family: Anton, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: -1%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(5px); 
+}
+
+#Contact::before {
+    content: 'CONTACT';
+    color: transparent;
+    z-index: -1;
+    -webkit-text-stroke: 1px #00ff04;
+    font-size: 76px;
+    font-family: Anton, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: -1%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(5px); 
+}
+
 
 
 
@@ -153,23 +199,52 @@ border: solid #343434 80px;
 }
 
 
-#etoile{
+
+#etoile1{
 position: absolute;
 left: 27%;
 top: 650px;
 z-index: 3;
 }
 
+#etoile2{
+    position: absolute;
+    left: 57%;
+    top: 210%;
+    z-index: 3;
+    }
+
+    #etoile3{
+        position: absolute;
+        left: 27%;
+        top: 397%;
+        z-index: 3;
+        }
+
 #sphere{
 
     position: absolute;
    left: 71%;
    top: 68%;
-   z-index: -1;
+   z-index: 2;
+}
+
+#oval{
+
+
+
+        position: absolute;
+       left: 1%;
+       top: 145%;
+       z-index: -1;
+
+
 }
 
 .carre{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width  : 183px;
     height : 183px;
     margin: 15px;
@@ -177,12 +252,14 @@ z-index: 3;
     border-radius: 20%;
     -webkit-box-shadow: 5px 5px 0px 2px #00FF04; 
 box-shadow: 5px 5px 0px 2px #00FF04;
+
 }
 
 .competence{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .competence-container{
@@ -190,6 +267,7 @@ display: flex;
 padding-left: 7%;
 padding-top: 77px;
 gap: 110px;
+
 
 
 }
@@ -233,3 +311,172 @@ gap: 110px;
     gap: 110px;
              
 }
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px; 
+    height: 50px; 
+    background-color: none; 
+    border-radius: Opx;
+    overflow: hidden; 
+    margin: 113px;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+label {
+    flex: 1;
+    text-align: center;
+    line-height: 50px; 
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+#personnel:checked ~ .slider {
+    left: 0%; 
+}
+
+#professionnel:checked ~ .slider {
+    left: 50%; 
+}
+
+#personnel:checked ~ label[for="personnel"] {
+    color: #00ff04; 
+}
+
+#professionnel:checked ~ label[for="professionnel"] {
+    color: #00ff04; 
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%; 
+    height: 5px; 
+    background-color: #00ff04; 
+    border-radius: 25px; 
+    transition: 0.3s 
+}
+
+.personnels-container{
+
+    border-radius: 10px;
+
+}
+
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width  : 304px;
+    height : 455px;
+    margin: 15px;
+gap: 31px;
+
+
+
+}
+
+.rectangle img{
+
+    box-shadow: 10px 10px #00ff04;
+    border-radius: 10px;
+
+}
+
+#forme{
+
+
+    position: absolute;
+    left: 15%;
+    top: 240%;
+    z-index: -1;
+
+}
+
+#button2{
+
+    width: 309px;
+    height: 112px;
+    font-family: Montserrat;
+    font-size: 30px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    background-color: black;
+    -webkit-box-shadow: 3px 3px 0px 1px #00FF06; 
+    box-shadow: 3px 3px 0px 1px #00FF06;
+    margin-top: 145px;
+}
+
+
+#image-contact{
+
+    padding-top: 181px;
+    padding-right: 30%;
+    margin-bottom: 170px;
+}
+
+#image-contact img{
+
+    box-shadow: 10px 10px #00ff04;
+    border-radius: 10px;
+
+
+
+
+}
+
+.footer-links{
+
+    background-color:black;
+    width: 1440px;
+    height: 449px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat ;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+
+#copyright{
+
+    font-size: 16px;
+    
+}
+
+ 
+.links-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 64px;
+}
+
+
+.links{
+background: white;
+width: 66px;
+height: 66px;
+border-radius: 10px;align-content: center;
+
+}
+
